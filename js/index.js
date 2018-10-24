@@ -6,7 +6,7 @@ window.onload = function (){
     fotos = document.getElementsByTagName("img");
     for (let i=0; i<fotos.length;i++){
         ruta = fotos[i].src
-        fotos[i].setAttribute("onclick", "agrandar(ruta)");
+        fotos[i].setAttribute("onclick", "agrandar(this.src)");
     } 
 }
 
